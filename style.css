@@ -1,0 +1,240 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #212227;
+}
+.logo{
+    border-radius: 12vh;
+}
+.navbar{
+    background-color: #212227;
+    /* background-color: #212227; */
+    color: white;
+    color: white;
+    height: 8vh;
+}
+.navbar ul{
+    display: flex;
+    margin-left: 2vh;
+    
+}
+li{
+    margin-left: 12px;
+    margin-top: 3vh;
+    font-size: 2vh;
+    font-family: sans-serif;
+    list-style: none;
+    
+}
+.listitem{
+    /* background-color: #007795; */
+    cursor: pointer;
+    border-radius: .5vh;
+    width: 8vh;
+    padding: .5vh;
+    padding-left: 1vh;
+    background-color: transparent;
+    
+    /* padding-top: 1vh; */
+    /* height: 2vh; */
+
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    margin-left: 2vh;
+    width: 25px;
+    /* margin-top: 1vh; */
+    height: 6px;
+    background-color:#111;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+  }
+  
+  .ball {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(14px);
+  }
+  
+  .fa-moon {
+    color: yellow;
+  }
+  
+  .fa-sun {
+    color: yellow;
+  }
+@keyframes hover{
+    from{
+        opacity: 1%;
+    }
+    to{
+        opacity:100%;
+    }
+}
+/* z-index: 999999; */
+.listitem:hover{
+    background-color: #007795;
+    animation: hover;
+    animation-duration: .4s;
+}
+h3{
+    margin-top: -.2vh;
+}
+.item{
+    margin-left: 10vh;
+}
+.toggle:hover{
+    background: transparent;
+}
+.main{
+    margin-left: -4vh;
+}
+@keyframes typewriter {
+    from{
+        /* width: 0%; */
+/*        left: 100%; */
+        margin-left: 19vh;
+        left: 0%;
+    }
+    to{
+        /* width: 45vh; */
+        /*left: 0vh; */
+        margin-left: 112.5vh;
+        left: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.form{
+    margin-left: 68vh;
+    margin-top: 92vh;
+    width: 50vh;
+    height: 70vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cursor{
+    height: 5vh;
+    z-index: 999999;
+    width: 2px;
+    background-color: #111;
+}
+.title{
+    /* color: linear-gradient(340deg, rgb(75, 161, 252) 3.44%, rgb(236, 42, 237) 100%);; */
+    color: rgb(75, 161, 252);
+    position: relative;
+    margin-left: 35vw;
+    margin-top: 20vh;
+    /* position: absolute; */
+    font-family: sans-serif;
+    z-index: -999;
+}
+.container{
+    width: 45vh;
+    height: 5vh;
+    margin-top: -5vh;
+    left: 0;
+    z-index: 999;
+    margin-left: 67vh;
+    background-color: #212227;
+    /* background-color: black; */
+    animation: typewriter 4s steps(30) infinite;
+
+}
+
+@keyframes button {
+    from{
+        width: 18vh;
+        height: 5vh;
+    }
+    to{
+        width: 20vh;
+        height: 6vh;
+    }
+}
+.started:hover{
+    animation: button .5s forwards ease-in-out;
+    transition: ease-in-out;
+    padding: 2px;
+    /* animation-duration: .2s; */
+    /* animation-play-state: paused; */
+}
+.started{
+    margin-left: 45vw;
+    margin-top: 8vh;
+    cursor: pointer;
+    width: 18vh;
+    height: 5vh;
+    border: 0;
+    border-radius: 2vh;
+    background-image: linear-gradient(340deg, rgb(75, 161, 252) 3.44%, rgb(236, 42, 237) 100%);;
+}
+.para{
+    margin-left: 35vw;
+    margin-top: 3vh;
+    color: white;
+    font-family: sans-serif;
+}
+.darkorlight{
+    background-color: white;
+}
+@media screen and (max-width: 800px)
+{
+    .navbar ul{
+        flex-direction: column;
+        animation: ease-in-out;
+        animation-duration: 1s;
+        align-items: center;
+    }
+    .item{
+        margin-left: 0;
+    }
+    .toggle{
+        margin-left: -20vh;
+
+    }
+}
+    /* .line{ */
+        /* background-color: white;
+        width: 5vh;
+        border-radius: 1vh;
+        height: .6vh;
+        margin-top: 4px;
+    }
+    .hamburger{
+        width: 10vh;
+        height: 10vh;
+        margin-left: 60vw;
+    }
+} */
